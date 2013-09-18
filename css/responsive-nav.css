@@ -1,0 +1,157 @@
+/*! responsive-nav.js v1.0.15 by @viljamis */
+/* header */
+
+.header {
+  width: 100%;
+  height: 85px;
+  position: fixed;
+  z-index:1;
+  background-color: #333333;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=80);
+  -moz-opacity: 0.80;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
+
+}
+.header-inner {
+  margin: 0 auto;
+  max-width: 1600px;
+  position: relative;
+  padding: 0;
+  z-index:1;
+}
+
+.header-logo {
+  position: absolute;
+  top: 12px;
+  left: 5%;
+  z-index: 10;
+}
+
+
+#nav ul {
+  margin: 0;
+  list-style: none;
+  text-align: right;
+  background-color: #333333;
+
+}
+
+#nav li {
+  display:block;
+  line-height: 55px;
+  font-family: Ubuntu, sans-serif;
+  /*text-transform: uppercase;*/
+  color:#F0F0F0;
+  font-size: 18px;
+  text-align: left;
+  cursor:pointer;
+}
+#nav li:hover {
+  font-size: 21px;
+  -webkit-transition: all .2s ease-in-out;
+}
+
+
+.js #nav {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+}
+
+#nav-toggle {
+    line-height: 80px;
+    text-align: right;
+    width: 72px;
+    display: block;
+    background-color: #333333;
+    background: url(../images/menu-closed.png) no-repeat center right;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+a#nav-toggle {
+    color: #ffffff;
+}
+
+#nav.opened {
+  max-height: 9999px;
+}
+
+#nav li.icons {
+   text-align: center;
+   background-color: #171719;
+   letter-spacing: 0;
+   font-size: 18px;
+}
+
+#nav a i.icon {
+   padding: 15px;
+}
+
+/* must be over tablet size (portrait) */
+@media screen and (min-width: 801px) {
+  
+  .header{
+    height: 55px;
+  }
+
+  .header-inner {
+    padding: 0 5%;
+  }
+
+  .header-logo {
+    left: 7%;
+  }
+
+  #nav ul {
+    padding: 0;
+    background:none;
+  }
+
+
+  #nav li {
+    margin: 0 40px 0 0;
+    border-bottom: none;
+    text-align: right;
+    background: none;
+    font-size: 16px;
+  }
+
+  #nav-toggle {
+    padding-right: 50px;
+  }
+
+  .js #nav {
+    position: relative;
+  }
+
+  .js #nav.closed {
+    max-height: none;
+  }
+  #nav-toggle {
+    display: none;
+  }
+  #nav li {
+    display:inline;
+  }
+
+  #nav li.icons {
+     text-align: right;
+     background: none;
+     margin: 0 0 0 20px;
+     font-size: 14px;
+  }
+
+  #nav a i.icon {
+   padding: 6px 0px;
+  }
+
+
+}
