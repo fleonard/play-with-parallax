@@ -53,10 +53,57 @@ html,body{
 	height:100%;
 }
 
+/* Responsive Grid */
+
+.container {
+	width: 100%;
+	margin: 0 auto 0;
+}
+.row { width: 100%; }
+.row:after {
+	content: '\0020'; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden;
+}
+.span-1, .span-2, .span-3, .span-4, .span-5, .span-6, .span-7, .span-8, .span-9, .span-10, .span-11, .span-12 {
+	float: left;
+	margin: 4px 1.25%;
+	width: 97.5%;
+}
+@media (min-width: 641px) {
+	[class*='span-'] {
+		margin-bottom: 12px;
+		margin-top: 12px;
+	}
+	.span-1 { width: 5.833333333333333%; }
+	.span-2 { width: 14.16666666666667%; }
+	.span-3 { width: 22.5%; }
+	.span-4 { width: 30.83333333333333%; }
+	.span-5 { width: 39.16666666666667%; }
+	.span-6 { width: 47.5%; }
+	.span-7 { width: 55.83333333333333%; }
+	.span-8 { width: 64.16666666666666%; }
+	.span-9 { width: 72.5%; }
+	.span-10 { width: 80.83333333333333%; }
+	.span-11 { width: 89.16666666666667%; }
+	.span-12 { width: 97.5%; }
+}
+@media (min-width: 984px) {
+	.container {
+		max-width: 984px;
+		width: auto;
+	}
+}
+
+
+/* Content Style */
+
 .slide{
 	background-attachment: fixed;
 	width:100%;
-	height:90%;
+	height:80%;
 	position: relative;
 	box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
 }
@@ -67,15 +114,29 @@ html,body{
 	position:relative;
 }
 
-
 #slide1{
-	background-color:#A1BDEA;
+	background-image:url(../images/blackboard.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	
 }
 
 #slide2{
 	background-color:#001D68;
-	
+	padding-top: 40px;	
+}
+
+#slide2 h2{
+	font-size: 30px;
+	margin-bottom: 22px;
+	color:#FFF;
+}
+#slide2 p{
+	color:#FFF;
+	font-size: 15px;
+	margin-bottom: 12px;
 }
 
 #slide3{
@@ -90,11 +151,16 @@ html,body{
 	-o-background-size: cover;
 	background-size: cover;
 }
-#slide4 .parallaxbg{
-	position:absolute;
-	right:40px;
-	top:40px;
-	font-size:28px;
-	color:rgba(51,51,51,0.3);
+
+#headshot {
+	width: 12.5%;
+	float: left;
+	margin-right: 15px;
 }
 
+#headshot img {
+	width: 100%;
+	height: auto;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}

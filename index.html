@@ -8,9 +8,36 @@
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&amp;subset=Latin">
 <link rel="stylesheet" href="css/responsive-nav.css">
 
+<!--[if lte IE 8]>
+			<style>
+				.container { width: 984px; }
+			</style>
+		<![endif]-->
+		<!--[if (IE 7)|(IE 8)]>
+			<style>
+				.span-1, .span-2, .span-3, .span-4, .span-5, .span-6, .span-7, .span-8, .span-9, .span-10, .span-11, .span-12 {
+					margin-bottom: 12px;
+					margin-top: 12px;
+				}
+				.span-1 { width: 5.833333333333333%; }
+				.span-2 { width: 14.16666666666667%; }
+				.span-3 { width: 22.5%; }
+				.span-4 { width: 30.83333333333333%; }
+				.span-5 { width: 39.16666666666667%; }
+				.span-6 { width: 47.5%; }
+				.span-7 { width: 55.83333333333333%; }
+				.span-8 { width: 64.16666666666666%; }
+				.span-9 { width: 72.5%; }
+				.span-10 { width: 80.83333333333333%; }
+				.span-11 { width: 89.16666666666667%; }
+				.span-12 { width: 97.5%; }
+			</style>
+		<![endif]-->
+
 </head>
 
 <body>
+
 	<div class="header">
 		<div class="header-inner">
 
@@ -27,24 +54,29 @@
 
 	
 
-	<section class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
-		
-
-	</section>
-
+	<section class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5"></section>
 
 
 	<section class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="1.2">
-		<div class="wrapper">
+		<div class="container">
+			<div class="row">
+				<div id="headshot" class="span-4">
+					<img src="images/face.jpg" alt="FL" />
+				</div>
+				<div class="span-8">
+					<h2>Frontend Developer</h2>
+					<p>Olog-hai Rohan Gandalf Gollum orci interdum eros. Gondor Bree Durin Moria semper am interdum dinner Merry Shelob sollicitudin metus porttitor.</p>
 
-			
-		</div>
+					<p>Elrond orcs it's a dangerous business, Frodo, going out your door Integer nec nec Vala second breakfast Frodo Baggins libero orci et. There’s some good in this world, Mr. Frodo... and it’s worth fighting for the Shire urna id vitae Rohan Shelob Durin the one ring to rule them all malesuada vel quis Lindon Middle-earth giant spiders nisi anteger iaculis. Galadriel salted pork Khamul it's a dangerous business, Frodo, going out your door tincidunt velit nisi.</p>
 
+					<p>Samwise Gamgee Forodwaith nazgul Tolkien Rhudaur interdum turpis. Numenoreans Grey Havens nazgul Silmaril all's well that ends better tincidunt quis Tom Bombadil am nec I’m glad to be with you, Samwise Gamgee... here at the end of all things vampire Samwise Gamgee Moria anteger am. Dragon hobbit miruvor Easterlings turpis adipiscing lembas bread Huorns Cirdan it's a dangerous business, Frodo, going out your door tempor urna. It's the job that's never started as takes longest to finish Noldor urna sollicitudin Samwise Gamgee miruvor all's well that ends better goblin am velit Buckland the one ring to rule them all Morgomir miruvor Mordor pellentesque ligula.</p>
+
+					<p>Deagol Durin hobbit vitae tincidunt condimentum Moria ent Morgomir Elrond tristique tellus congue. Orcs rohirrim giant spiders Thror Tom Bombadil tincidunt sollicitudin nec Gandalf war of wrath orcs venenatis quis lectus I’m glad to be with you, Samwise Gamgee... here at the end of all things Minhiriath Mount Doom tellus rhoncus et. Dinner Huorns Grey Havens hobbit urna feugiat malesuada uruk-hai buckleberry ferry Bilbo Baggins justo bibendum vitae. Moria Moria ac felis sodales. They come in pints? I'm getting one nazgul ac adipiscing rhoncus Boromir Bagend even the smallest person can change the course of the future elves scelerisque est ac.</p>
+				</div>
+			</div>
+		</div>		
 
 	</section>
-
-
-
 
 
 	<section class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.8">
@@ -57,13 +89,12 @@
 	</section>
 
 
-
-
-
-
 	<section class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0">
-		
+		<div class="row">
+			<div class="span-12">
 
+			</div>
+		</div>
 	</section>
 
 

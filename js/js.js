@@ -25,7 +25,7 @@ jQuery(document).ready(function ($) {
         else {
             $('.navigation li[data-slide="' + dataslide + '"]').addClass('active').next().removeClass('active');
         }
-    }, { offset: '10%'});
+    }, { offset: '20%'});
 
 
     mywindow.scroll(function () {
